@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <title>Sarvodaya Opinion Format</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+     body {
+       width: 230mm;
+       height: 100%;
+       margin: 0 auto;
+       padding: 0;
+       font-size: 12pt;
+       /* background: rgb(204,204,204);  */
+     }
+     * {
+       box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       font-family: 'Poppins', sans-serif;
+     }
+     .main-page {
+       width: 210mm;
+       min-height: 297mm;
+       margin: 10mm auto;
+       background: white;
+       box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+     }
+     .sub-page {
+       /* padding: 1cm; */
+       height: 297mm;
+     }
+     @page {
+       size: A4;
+       margin: 0;
+     }
+     @media print {
+       html, body {
+     	width: 210mm;
+     	height: 297mm;        
+       }
+       .main-page {
+     	margin: 0;
+     	border: initial;
+     	border-radius: initial;
+     	width: initial;
+     	min-height: initial;
+     	box-shadow: initial;
+     	background: initial;
+     	page-break-after: always;
+       }
+     }
+
+        .header{
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 10px;
+        }
+        .sarvodaya-logo {
+            width: 260px;
+            height: auto;
+            vertical-align: super;
+            margin-right: 280px;
+            margin-left: 20px;
+        }
+        .nabh-logo{
+            width: 80px;
+            height: auto;
+            /* float: right; */
+        }
+        .nabl-logo{
+            width: 80px;
+            height: auto;
+            /* float: right; */
+        }
+        
+        .multi-color-line {
+            display: flex; /* Create a flexible container for spans */
+            width: 100%; /* Full width */
+            height: 6px; /* Line thickness */
+            padding: 0px;
+        }
+        .multi-color-line span {
+            flex: 1; /* Each span takes equal space */
+            height: 100%; /* Full height */
+        }
+        .blue { background-color: #018fc5; } /* First color - Blue */
+        .red { background-color: #e31936; } /* Second color - Red */
+        .green { background-color: #9fa617; } /* Third color - Green */
+        .orange { background-color: #f58220; } /* Fourth color - Orange */
+
+        .hospital-img{
+            background-image: url(/hospital-building.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+        .accredation-logo{
+            position: relative;
+            left: 500px;
+            top: 20px;
+            width: 250px;
+        }
+        .blue-div{
+            background-image: linear-gradient(#018fc5, #018fc5);
+            color: #ffffff;
+            font-weight: 600;
+            text-align: center;
+            height: 50px;
+        }
+        .light-blue{
+            background-color: #d1ebf5;
+            color: #000000;
+            text-align: center;
+            height: 50px;
+        }
+        .paragraph>p{
+          padding-left: 40px;
+          padding-right: 40px;
+          font-size: 14px;
+          text-align: justify;
+          margin-bottom: 10px;
+          line-height: 18px;
+        }
+        .ftr-heading{
+            font-size: 24px;
+            font-weight: 800;
+            color: #008fc5;
+            /* padding: 5px !important; */
+            margin: 5 5px;
+            text-align: center;
+        }
+
+  </style>
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="sub-page">
+        <div class="header">
+            <img class="sarvodaya-logo" src="Sarvodaya-healthcare-logo.svg" alt="Sarvodaya healthcare logo">
+            <img class="nabh-logo" src="NABH-Logo.png" alt="NABH Logo">
+            <img class="nabl-logo" src="NABL-Logo.png" alt="NABL Logo">
+        </div>
+        <div class="multi-color-line">
+            <span class="blue"></span>
+            <span class="red"></span>
+            <span class="green"></span>
+            <span class="orange"></span>
+        </div>
+        <div class="hospital-img">
+            <img src="/accredation.png" class="accredation-logo">
+        </div>
+        <div class="blue-div">
+            <p style="margin-top: 0px; padding: 12px; font-weight: 600; font-size: 18px;">109 ICU BEDS | 12 MODERN OPERATION THEATRES | SPREAD OVER 4.25 ACRES</p>
+        </div>
+        <div class="light-blue">
+            <p style="margin-top: 0px; padding: 15px;"><b>Established:</b> 2022 <b>Beds:</b> 450+ <b>City:</b> Faridabad <b>Country:</b> India <b>Rating:</b> ⭐⭐⭐⭐ 4.5</p>
+        </div>
+        <div class="paragraph">
+          <p>
+            The flagship unit of the Sarvodaya Healthcare group, Sarvodaya Hospital, Sector 8 Faridabad is a 450-bedded super speciality hospital, serving the people across Faridabad & Delhi-NCR with preventive and curative services. The best hospital in Faridabad, Delhi NCR brings new-age healthcare solutions, outcome-driven experience and unmatched personalised care that have made us a hospital of choice for patients. <br><br>
+            Working under the aegis of globally renowned and best doctors in Delhi NCR with experienced staff, we have given people a new chance at life with Advanced Cancer Care, Robotic Knee Replacements, Complex Brain Tumour surgeries, Urolift Surgery, Complex Paediatric to Adult Cardiac procedures and treatments for minor to critical and trauma cases. <br><br>
+            Ranked as the best hospital in Faridabad, Sarvodaya Hospital’s top ENT and Cochlear Implant department has been recognised for performing India’s first cochlear implant surgery on the youngest patient (5 months old) in the country. <br><br>
+            Sarvodaya is North India’s first hospital to have two Fully Active Joint Replacement Robots; Spyglass DS II Direct Visualisation System, a Revolutionary tool for the Diagnosis & Treatment of Pancreatic, Bile Ducts & Gall Bladder Disorders; Zeiss Tivato 700 Neuro-surgical Microscope for complex brain surgeries; Versa HD 6D LINAC for radiotherapies and radiosurgery with sub-mm accuracy; and more. <br><br>
+            The top hospital of Faridabad brings a wide gamut of curative and therapeutic facilities under different dedicated departments for Comprehensive Cancer Care, Bone Marrow Transplant, Nuclear Medicine and Molecular Theranostics,  Robotic Joint Replacement, Neurosciences, Paediatric to Adult Cardiology, Minimal Access Surgery, Dialysis & Kidney Transplant, Gastroenterology & GI Surgeries, Urology & LASER Urological Surgeries and more.<br><br>
+          </p>
+        </div>
+        <div class="" style="border-top: #ffffff; padding: 0px;">
+          <p class="ftr-heading">Sarvodaya Hospital and Research Centre, NCR Delhi.<br></p>
+          <p style="color: #464a4e; font-size: 18px; font-weight: 400; padding-bottom: 0px !important;text-align: center;margin: 5 5px;">YMCA Road, Sector B, Faridabad- 121005 Haryana : 0129 4184444.<br></p>
+          <p style="text-align: center; margin: 5 5px;"> <span><i class="fa fa-globe" aria-hidden="true"></i> www.sarvodayahospital.com </span>  <i class="fa fa-envelope-o" aria-hidden="true"></i> ips@sarvodayahospital.com</p>
+          <div class="multi-color-line">
+              <span class="blue"></span>
+              <span class="red"></span>
+              <span class="green"></span>
+              <span class="orange"></span>
+          </div>
+        </div>  
+      </div>    
+    </div>
+  </body>
+</html>

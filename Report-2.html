@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <title>Report-2</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+     body {
+       width: 230mm;
+       height: 100%;
+       margin: 0 auto;
+       padding: 0;
+       font-size: 12pt;
+       /* background: rgb(204,204,204);  */
+     }
+     * {
+       box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       font-family: 'Poppins', sans-serif;
+     }
+     .main-page {
+       width: 210mm;
+       min-height: 297mm;
+       margin: 10mm auto;
+       background: white;
+       box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+     }
+     .sub-page {
+       /* padding: 1cm; */
+       height: 297mm;
+     }
+     @page {
+       size: A4;
+       margin: 0;
+     }
+     @media print {
+       html, body {
+     	width: 210mm;
+     	height: 297mm;        
+       }
+       .main-page {
+     	margin: 0;
+     	border: initial;
+     	border-radius: initial;
+     	width: initial;
+     	min-height: initial;
+     	box-shadow: initial;
+     	background: initial;
+     	page-break-after: always;
+       }
+     }
+
+        .header{
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 10px;
+        }
+        .sarvodaya-logo {
+            width: 260px;
+            height: auto;
+            vertical-align: super;
+            margin-right: 40px;
+            margin-left: 20px;
+        }
+        .nabh-logo{
+            width: 80px;
+            height: auto;
+            /* float: right; */
+        }
+        .nabl-logo{
+            width: 80px;
+            height: auto;
+            /* float: right; */
+        }
+        
+        .multi-color-line {
+            display: flex; /* Create a flexible container for spans */
+            width: 100%; /* Full width */
+            height: 6px; /* Line thickness */
+            padding: 0px;
+        }
+        .multi-color-line span {
+            flex: 1; /* Each span takes equal space */
+            height: 100%; /* Full height */
+        }
+        .blue { background-color: #018fc5; } /* First color - Blue */
+        .red { background-color: #e31936; } /* Second color - Red */
+        .green { background-color: #9fa617; } /* Third color - Green */
+        .orange { background-color: #f58220; } /* Fourth color - Orange */
+
+        .hospital-img{
+            background-image: url(/hospital-building.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+        .accredation-logo{
+            position: relative;
+            width: 250px;
+            vertical-align: baseline;
+        }
+        .paragraph>p{
+          padding-left: 40px;
+          padding-right: 40px;
+          font-size: 14px;
+          text-align: justify;
+          margin-bottom: 10px;
+          line-height: 20px;
+          font-weight: 300;
+          color: #464a4e;
+        }
+        .ftr-heading{
+            font-size: 24px;
+            font-weight: 800;
+            color: #008fc5;
+            /* padding: 5px !important; */
+            margin: 5 5px;
+            text-align: center;
+        }
+
+  </style>
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="sub-page">
+        <div class="header">
+            <img class="sarvodaya-logo" src="Sarvodaya-healthcare-logo.svg" alt="Sarvodaya healthcare logo">
+            <img src="/accredation.png" class="accredation-logo">
+            <img class="nabh-logo" src="NABH-Logo.png" alt="NABH Logo">
+            <img class="nabl-logo" src="NABL-Logo.png" alt="NABL Logo">
+        </div>
+        <div class="multi-color-line">
+            <span class="blue"></span>
+            <span class="red"></span>
+            <span class="green"></span>
+            <span class="orange"></span>
+        </div>
+
+        <div class="paragraph">
+          <p>
+            <b>Please Note:</b>
+            <br>
+            The cost does not include treatment of any unrelated illness or procedures other than the one for which this estimate has been prepared.<br>
+            <br>
+            Also, expenses for any additional hospital stay beyond the stipulated days as per the estimate shall be payable extra. The cost ranges provided are based upon our best understanding of the patient’s condition at the time of contact.<br>
+            <br>
+            More informed estimates can be provided once the patient has been thoroughly examined by the concerned physician and tests are done after admission at the hospital. The cost of stay in the guest houses for follow-ups is not included in the cost stated above.<br>
+            <br>
+            <b>ADDITIONAL INFORMATION</b>  Other queries that some of our patients have, are being answered below.<br>
+            <br>
+            <b>Can an attendant stay with me in the hospital?</b><br>
+            During the patient’s hospitalization period, one attendant can stay with the patient in single room at no extra cost. The food and stay of the attendant would be complimentary. In twin sharing room, two patients and two attendants can be accommodated with a common sharing bathroom.
+            <br><br>
+            <b>What would be the costs of accommodation outside the hospital, as I will need to stay in hotel after completing my treatment?</b><br>
+            The cost of treatment that has been provided to you does not include the cost of stay outside hospital. If the accommodation is requested by you (near the hospital), it will be subject to availability. Hotel accommodation may range from USD 50-80 per night.<br>
+            <br>
+            <b>What is the payment policy?</b>
+            A deposit of 80% of the cost estimate needs to be made by the patient at the time of admission. If the actual cost of treatment is lower than the amount submitted, it will be refunded at the time of discharge.
+            <br><br>
+            <b>What additional documents and information do you require from my doctor?</b>
+            Please carry all your previous medical reports including X-Ray, MRI, CT scans (films and reports), ultrasound images, blood investigation reports, discharge summary (If any) and other relevant documents.
+            <br><br>
+            <b>How soon can the investigations be scheduled?</b>
+            We ensure a minimal waiting period for our international patients. The treatment process is started as soon as you
+            are admitted under the treating doctor.
+            <br><br>
+            <b>Do I require a visa for India and will any assistance be provided by the hospital?</b>
+            Yes, for getting treatment in India, the patient requires a medical visa and the attendant would need a medical attendant visa. You will not face any difficulty in getting it as the visa applications for medical treatment are processed on priority basis by the Indian Embassy We provide visa invitation letter to help procure a medical visa to India for your treatment. Once you decide on getting the treatment done, please send us the passport details of all the persons traveling. 
+
+          </p>
+        </div>
+
+
+
+
+
+
+        <div class="" style="border-top: #ffffff; padding: 0px;">
+          <p class="ftr-heading">Sarvodaya Hospital and Research Centre, NCR Delhi.<br></p>
+          <p style="color: #464a4e; font-size: 18px; font-weight: 400; padding-bottom: 0px !important;text-align: center;margin: 5 5px;">YMCA Road, Sector B, Faridabad- 121005 Haryana : 0129 4184444.<br></p>
+          <p style="text-align: center; margin: 5 5px;"> <span><i class="fa fa-globe" aria-hidden="true"></i> www.sarvodayahospital.com </span>  <i class="fa fa-envelope-o" aria-hidden="true"></i> ips@sarvodayahospital.com</p>
+          <div class="multi-color-line">
+              <span class="blue"></span>
+              <span class="red"></span>
+              <span class="green"></span>
+              <span class="orange"></span>
+          </div>
+        </div>  
+      </div>    
+    </div>
+  </body>
+</html>

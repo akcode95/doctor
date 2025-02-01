@@ -1,121 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
     <title>Dr. Sujoy Kr. Bhattacharjee</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px; /* Regular font size */
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 28cm; /* A4 width is 21, we have kept as 28cm */
-            /*height: 29.7cm; A4 height */
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            border: 1px solid #cfcfcf;
-            padding: 0px;
-        }
-        .left-sidebar {
-            width: 35%; /* 1:3 ratio */
-            background-color: #d1ebf5;
+     body {
+       width: 230mm;
+       height: 100%;
+       margin: 0 auto;
+       padding: 0;
+       /* font-size: 12pt; */
+       /* background: rgb(204,204,204);  */
+       font-family: 'Poppins', sans-serif;
+     }
+     * {
+       box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       font-family: 'Poppins', sans-serif;
+     }
+     .main-page {
+       width: 210mm;
+       /* min-height: 297mm; */
+       margin: 10mm auto;
+       background: white;
+       box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+     }
+     /* .sub-page {
+       padding: 1cm;
+       height: 297mm;
+     } */
+     @page {
+       size: A4;
+       margin: 0;
+     }
+     @media print {
+       html, body {
+     	width: 210mm;
+     	/* height: 297mm;         */
+       }
+       .main-page {
+     	margin: 0;
+     	border: initial;
+     	border-radius: initial;
+     	width: initial;
+     	min-height: initial;
+     	box-shadow: initial;
+     	background: initial;
+     	page-break-after: always;
+       }
+     }
+        .column-left {
+            float: left;
+            width: 35%;
             padding: 20px;
+            background-color: #d1ebf5;
+        }
+        .column-right {
+            float: left;
+            width: 65%;
+            padding: 10px;
+            padding-right: 0px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
         .dr-info{
             color: #464a4e;
-            padding: 20px;
-        }
-        hr.thick{
-            height: 3px;
-            background-color: #464a4e;
-            border: none;
-            margin: 0 auto;
-            width: 90%;
+            padding: 5px;
+            font-size: 15px;
         }
         .expertise-section{
-            padding: 20px;
+            padding: 5px;
             color: #464a4e;
-
-        }
-        .right-content {
-            width: 65%; /* 1:3 ratio */
-            background-color: white;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        h1, p {
-            margin: 0;
-            padding-bottom: 10px;
-            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
         }
         .dr-sujoy{
-            margin-top: 50px;
-            margin-left: 15px;
-            border: solid 20px #018fc5;
+            margin-top: 30px;
+            /* margin-left: 15px; */
+            border: solid 14px #018fc5;
+            width: 100%;
         }
         .header{
             align-items: center;
-            padding: 20px;
+            /* padding: 20px; */
             margin-bottom: 20px;
+            margin-top: 10px;
         }
-        .sarvodaya-logo{
-            width: 300px;
+        .sarvodaya-logo {
+            width: 260px;
             height: auto;
-            vertical-align: middle;
+            vertical-align: super;
+            margin-right: 50px;
         }
         .nabl-logo{
             width: 80px;
             height: auto;
-            float: right;
+            /* float: right; */
         }
         .nabh-logo{
             width: 80px;
             height: auto;
-            float: right;
+            /* float: right; */
         }
         .dr-name {
             background-color: #018fc5;
             color: #ffffff;
             font-weight: 600;
-            border-left: 45px solid #018fc5;
-            margin-left: -45px;
-            padding: 20px;
+            border-left: 25px solid #018fc5;
+            margin-left: -30px;
+            padding: 16px;
         }
-        .mt-30{
-            margin-top: 30px;
+        .mt-70{
+            margin-top: 5px;
         }
         .edu{
-            padding: 20px;
-            font-size: 20px;
+            padding: 10px;
+            font-size: 16px;
             color: #000000;
         }
+        .edu>p{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
         .about-section{
-            padding: 20px;
+            padding: 10px;
+            padding-right: 30px;
+            padding-bottom: 0px;
         }
         .about-section>ul>li{
             color: #464a4e;
             text-align: justify;
+            font-size: 12px;
         }
-        .footer{
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+
         .ftr-heading{
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 800;
             color: #008fc5;
-            padding: 0px !important;
+            /* padding: 5px !important; */
+            margin: 5 5px;
+            text-align: center;
         }
         .multi-color-line {
             display: flex; /* Create a flexible container for spans */
@@ -130,100 +160,97 @@
         .red { background-color: #e31936; } /* Second color - Red */
         .green { background-color: #9fa617; } /* Third color - Green */
         .orange { background-color: #f58220; } /* Fourth color - Orange */
-    </style>
-</head>
-<body>
-
-
-<div class="container" style="margin-top: 50px; border-bottom: #ffffff;">
-    <!-- Left Sidebar -->
-    <div class="left-sidebar">
-        <img class="dr-sujoy" src="dr-sujoy.png" alt="">
-
-        <p class="dr-info">
-            <b>Doctor Category :</b> Paediatric Neurology<br>
-            <b>Department :</b> Neurology<br>
-            <b>City :</b> Faridabad <br>
-            <b>Language :</b> English, Hindi <br>
-            <b>Years of Experience :</b> 4 <br>
-            <b>Highlights :</b> Coming Soon<br>
-            <b>Rating :</b>  ⭐  ⭐  ⭐  ⭐  ⭐  4.4
-        </p>
+  </style>
+  </head>
+  <body>
+    <div class="main-page row">
+      <div class="sub-page">
+          <div class="column-left">
+            <img class="dr-sujoy" src="dr-sujoy.png" alt="">
         
-        <hr class="thick">
+                <p class="dr-info">
+                    <b>Doctor Category :</b> Paediatric Neurology<br>
+                    <b>Department :</b> Neurology<br>
+                    <b>City :</b> Faridabad <br>
+                    <b>Language :</b> English, Hindi <br>
+                    <b>Years of Experience :</b> 4 <br>
+                    <b>Highlights :</b> Coming Soon<br>
+                    <b>Rating :</b>  ⭐  ⭐  ⭐  ⭐  ⭐  4.4
+                </p>
+                
+                <hr class="thick">
+        
+                <div class="expertise-section">
+                <p style="color: #464a4e; font-size: 20px; font-weight: 600; margin-top: 5px; margin-bottom: 5px;">EXPERTISE</p>
+                    <ul style="padding-left: 25px;">
+                        <li>Cruciate-Retaining or Ligament Preserving Knee Replacement</li>
+                        <li>Robotic Joint Replacement</li>
+                        <li>3D Navigated Total Knee Replacement</li>
+                        <li>Partial Knee Replacement</li>
+                        <li>Revision Joints Replacement Surgeries</li>
+                        <li>Shoulder and Elbow Replacement</li>
+                        <li>Sports Injury (Arthroscopy)</li>
+                    </ul>
+                </div>
+                <div class="mt-70">
+                    &nbsp;
+                </div>
+          </div>
 
-        <div class="expertise-section">
-        <p style="color: #464a4e; font-size: 22px; font-weight: 600;">EXPERTISE</p>
-            <ul>
-                <li>Cruciate-Retaining or Ligament Preserving Knee Replacement</li>
-                <li>Robotic Joint Replacement</li>
-                <li>3D Navigated Total Knee Replacement</li>
-                <li>Partial Knee Replacement</li>
-                <li>Revision Joints Replacement Surgeries</li>
-                <li>Shoulder and Elbow Replacement</li>
-                <li>Sports Injury (Arthroscopy)</li>
-            </ul>
-        </div>
-    </div>
-    
-    <!-- Right Content -->
-    <div class="right-content">
-        <div class="header">
-            <img class="sarvodaya-logo" src="Sarvodaya-healthcare-logo.svg" alt="Sarvodaya healthcare logo">
-            <img class="nabl-logo" src="NABL-Logo.png" alt="NABL Logo">
-            <img class="nabh-logo" src="NABH-Logo.png" alt="NABH Logo">
-        </div>
-
-        <div class="mt-30">
+          <div class="column-right">
+            <div class="header">
+                <img class="sarvodaya-logo" src="Sarvodaya-healthcare-logo.svg" alt="Sarvodaya healthcare logo">
+                <img class="nabh-logo" src="NABH-Logo.png" alt="NABH Logo">
+                <img class="nabl-logo" src="NABL-Logo.png" alt="NABL Logo">
+                
+            </div>
             
-        </div>
-        
-        <div class="dr-name">
-            <p style="text-transform: uppercase; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 40px;">Dr. Sujoy Kr. Bhattacharjee</p>
-            <p style="font-size: 25px;">HOD & Director - Centre for Robotic Joint Replacement</p>
-        </div>
-        
-        <div class="edu">
-            <p>
-                M.S, MCH, F.A.C.S., F.I.C.S (Australia, USA), FMIS (USA)<br> 
-                FJR (US, Australia, Germany)<br>
-                Visiting joint replacement surgeon in Serbia (Europe)
-            </p>
-        </div>
+            <div class="dr-name">
+                <p style="text-transform: uppercase; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 28px; margin-top: 5px; margin-bottom: 5px;">Dr. Sujoy Kr. Bhattacharjee</p>
+                <p style="font-size: 20px; margin-top: 5px; margin-bottom: 0px; font-weight: 400; line-height: 20px;">HOD & Director - Centre for Robotic Joint Replacement</p>
+            </div>
+            
+            <div class="edu">
+                <p>
+                    M.S, MCH, F.A.C.S., F.I.C.S (Australia, USA), FMIS (USA)<br> 
+                    FJR (US, Australia, Germany)<br>
+                    Visiting joint replacement surgeon in Serbia (Europe)
+                </p>
+            </div>
 
-        <div class="about-section">
-            <p style="color: #008fc5; font-size: 22px; font-weight: 600;">ABOUT DOCTOR</p>
-            <ul>
-                <li>He has been awarded LIMCA Book of Records for doing Total Hip Replacement in 104 year old patient.</li>
-                <li>Dr. Sujoy has been doing Complex, Primary & Revision Joint Replacements for more than 20 years and treated around 13600+ patients including international patients from Saudi Arabia, Iraq, Nigeria, Oman, U.S. and other African countries.</li>
-                <li>He has been extensively trained in techniques of Joint Replacement Surgery from the best centers in the world. He had an opportunity to work in Princess Elizabeth Hospitals, Exeter U.K., Markoningen Clinic, Stuttgart, Germany, California Orthopedic Centre, San Diego U.S.A.</li>
-                <li>He has been trained for Computer Navigated and Minimal Invasive Joint Replacement from Southern Health Care Melbourne, Australia & U.S.A.</li>
-                <li>He has been a visiting Joint Replacement Surgeon to Serbia (Europe) & Tanzania (Africa).</li>
-                <li>He is well known National Faculty in various Joint Replacement Conferences.He has been a regular faculty in prestigious Cadaver Workshops & Arthroplastry Conferences in AIlMS, ISHKS, ROC & different states.</li>
-                <li>He has been selected as International faculty in Annual Arthroplastry Conference.</li>
-                <li>Monash Health, Melbourne, Australia, SOTA, Novi Sad, Serbia & CME conducted by Kettering Group of Hospitals, Dayton, Ohio, USA.</li>
-                <li>He had operated two live Total Knee Replacement surgeries as a part of pre conference workshop in SOTA, Novi Sad, Serbia.</li>
-                <li>He has been awarded Fellowship from International College of Surgeons, Australia Chapter (FICS). He happens to be the only Joint Replacement Surgeon from India to have this honour.</li>
-                <li>He has been awarded the most prestigious Fellowship from American College of Surgeon (FACS) for his brilliant work in Joint Replacement Surgery.</li>
-                <li>He topped all M.8.8.S exams in Silchar Medical Collage & awarded best outgoing M.B.B.S graduates 1995.</li>         
-            </ul>
-        </div>
+            <div class="about-section">
+                <p style="color: #008fc5; font-size: 20px; font-weight: 600;margin-top: 5px; margin-bottom: 5px;">ABOUT DOCTOR</p>
+                <ul style="padding-left: 25px;">
+                    <li>He has been awarded LIMCA Book of Records for doing Total Hip Replacement in 104 year old patient.</li>
+                    <li>Dr. Sujoy has been doing Complex, Primary & Revision Joint Replacements for more than 20 years and treated around 13600+ patients including international patients from Saudi Arabia, Iraq, Nigeria, Oman, U.S. and other African countries.</li>
+                    <li>He has been extensively trained in techniques of Joint Replacement Surgery from the best centers in the world. He had an opportunity to work in Princess Elizabeth Hospitals, Exeter U.K., Markoningen Clinic, Stuttgart, Germany, California Orthopedic Centre, San Diego U.S.A.</li>
+                    <li>He has been trained for Computer Navigated and Minimal Invasive Joint Replacement from Southern Health Care Melbourne, Australia & U.S.A.</li>
+                    <li>He has been a visiting Joint Replacement Surgeon to Serbia (Europe) & Tanzania (Africa).</li>
+                    <li>He is well known National Faculty in various Joint Replacement Conferences.He has been a regular faculty in prestigious Cadaver Workshops & Arthroplastry Conferences in AIlMS, ISHKS, ROC & different states.</li>
+                    <li>He has been selected as International faculty in Annual Arthroplastry Conference.</li>
+                    <li>Monash Health, Melbourne, Australia, SOTA, Novi Sad, Serbia & CME conducted by Kettering Group of Hospitals, Dayton, Ohio, USA.</li>
+                    <li>He had operated two live Total Knee Replacement surgeries as a part of pre conference workshop in SOTA, Novi Sad, Serbia.</li>
+                    <li>He has been awarded Fellowship from International College of Surgeons, Australia Chapter (FICS). He happens to be the only Joint Replacement Surgeon from India to have this honour.</li>
+                    <li>He has been awarded the most prestigious Fellowship from American College of Surgeon (FACS) for his brilliant work in Joint Replacement Surgery.</li>
+                    <li>He topped all M.8.8.S exams in Silchar Medical Collage & awarded best outgoing M.B.B.S graduates 1995.</li>         
+                </ul>
+            </div>
+
+          </div>   
+
+          <div class="" style="border-top: #ffffff; padding: 0px;">
+            <br>
+            <p class="ftr-heading">Sarvodaya Hospital and Research Centre, NCR Delhi.<br></p>
+            <p style="color: #464a4e; font-size: 18px; font-weight: 400; padding-bottom: 0px !important;text-align: center;margin: 5 5px;">YMCA Road, Sector B, Faridabad- 121005 Haryana : 0129 4184444.<br></p>
+            <p style="text-align: center; margin: 5 5px;"> <span><i class="fa fa-globe" aria-hidden="true"></i> www.sarvodayahospital.com </span>  <i class="fa fa-envelope-o" aria-hidden="true"></i> ips@sarvodayahospital.com</p>
+            <div class="multi-color-line">
+                <span class="blue"></span>
+                <span class="red"></span>
+                <span class="green"></span>
+                <span class="orange"></span>
+            </div>
+          </div>  
+      </div>
     </div>
-</div>
-
-<div class="container footer" style="border-top: #ffffff; padding: 0px;">
-    &nbsp;
-    <p class="ftr-heading">Sarvodaya Hospital and Research Centre, NCR Delhi.<br></p>
-    <p style="color: #464a4e; font-size: 22px; font-weight: 400; padding-bottom: 0px !important;">YMCA Road, Sector B, Faridabad- 121005 Haryana : 0129 4184444.<br></p>
-    <p> <span><i class="fa fa-globe" aria-hidden="true"></i> www.sarvodayahospital.com </span>  <i class="fa fa-envelope-o" aria-hidden="true"></i> ips@sarvodayahospital.com</p><br>
-    <div class="multi-color-line">
-        <span class="blue"></span>
-        <span class="red"></span>
-        <span class="green"></span>
-        <span class="orange"></span>
-    </div>
-</div> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
